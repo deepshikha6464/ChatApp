@@ -1,8 +1,6 @@
-package com.deepshikha.chatapp.Login_signup;
+package com.deepshikha.chatapp.View.Login_signup;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
-import androidx.fragment.app.FragmentManager;
 
 import android.os.Bundle;
 import android.view.View;

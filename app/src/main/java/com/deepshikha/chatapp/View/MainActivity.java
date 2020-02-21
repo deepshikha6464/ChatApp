@@ -1,8 +1,10 @@
-package com.deepshikha.chatapp;
+package com.deepshikha.chatapp.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.deepshikha.chatapp.R;
 
 public class MainActivity extends AppCompatActivity {
 

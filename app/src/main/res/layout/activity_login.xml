@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@color/loginBackground"
     android:layout_height="match_parent"
-    tools:context=".Login_signup.Login">
+    tools:context=".View.Login_signup.Login">
 <!---->
     <RelativeLayout
         android:id="@+id/card_container"
