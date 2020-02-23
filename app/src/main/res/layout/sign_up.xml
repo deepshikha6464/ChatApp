@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="LoginViewModel"
+            type="com.deepshikha.chatapp.viewModel.LoginViewModel" />
+    </data>
+<LinearLayout
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:minWidth="1000dp"
@@ -21,13 +29,17 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="User ID" />
+            android:hint="User ID"
+            android:id="@+id/u"
+            android:text="@={LoginViewModel.userid}"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:hint="Password"
+            android:id="@+id/p"
+            android:text="@={LoginViewModel.password}"
             android:inputType="textPassword" />
 
         <Button
@@ -35,8 +47,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:background="@android:color/holo_orange_light"
-            android:text="Login In" />
+            android:text="Login In"
+            android:onClick="@{(v) -> LoginViewModel.onClick(v)}"/>
 
     </LinearLayout>
 
 </LinearLayout>
+</layout>

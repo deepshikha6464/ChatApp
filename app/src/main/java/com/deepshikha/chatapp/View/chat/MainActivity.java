@@ -1,4 +1,4 @@
-package com.deepshikha.chatapp.View;
+package com.deepshikha.chatapp.View.chat;
 
 import androidx.appcompat.app.AppCompatActivity;
 

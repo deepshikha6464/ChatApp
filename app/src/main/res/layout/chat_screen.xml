@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chatbg">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/incoming"
+            android:background="@drawable/speech_bubble_incomming"
+            android:lineSpacingExtra="2dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="4dp"
+                    android:layout_alignParentLeft="true"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+                    android:layout_marginBottom="8dp"
+            android:text="Hi, How are you?"
+            android:textColor="#000000"
+            android:textSize="13.5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/outgoing"
+            android:background="@drawable/outgoing_bubble"
+            android:lineSpacingExtra="2dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="4dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:ellipsize="end"
+            android:layout_gravity="right"
+            android:text="Hi, How are you?"
+            android:textColor="#000000"
+            android:textSize="13.5dp"
+            />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:weightSum="100">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="8dp"
+        android:layout_weight="90"
+        android:background="@drawable/msg_text"
+        android:hint="Type a message" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/send"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="send.json"
+        app:lottie_loop="false"
+        android:layout_weight="20"
+        app:lottie_speed="1.25" />
+
+</LinearLayout>
+
+</RelativeLayout>
